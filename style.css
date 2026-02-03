@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(41, 1fr);
+  grid-template-rows: repeat(26, 1fr);
+  height: 90%;
+}
+
+#board div:hover {
+  border: 1px solid;
+  border-color: aliceblue;
+}
+
+#tiles {
+  background-color: rgb(17, 14, 14);
+  height: 10%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#tiles > div {
+  height: 60%;
+  width: 4rem;
+  border: solid;
+  border-color: aliceblue;
+  border-radius: 3px;
+}
+#tiles > div > div {
+  background-color: aliceblue;
+  position: absolute;
+  padding: 0.1rem;
+}
+
+.sky {
+  background-color: #87ceeb;
+}
+.soil {
+  background-image: url(images/dirt.webp);
+}
+.grass {
+  background-image: url(images/grass.webp);
+}
+.stone {
+  background-image: url(images/stone.webp);
+}
+.umen {
+  background-color: #dc5555;
+}
+
+nav {
+  margin-top: 1rem;
+  position: absolute;
+  display: flex;
+  width: 8vh;
+  gap: 0.1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #33505c34;
+
+}
+
+nav div {
+  padding: 0.2rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
