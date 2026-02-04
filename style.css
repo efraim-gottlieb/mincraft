@@ -28,15 +28,23 @@ body {
 
 #tiles > div {
   height: 60%;
-  width: 4rem;
+  width: 6rem;
   border: solid;
   border-color: aliceblue;
   border-radius: 3px;
 }
 #tiles > div > div {
-  background-color: aliceblue;
-  position: absolute;
+  display: inline-block;
+  background-color: rgb(7, 8, 9);
+  color: aliceblue;
   padding: 0.1rem;
+  border: 2px solid;
+  border-radius: 1rem;
+  width: 1.9rem;
+  text-align: center;
+  padding: 0.1rem;
+  font-size: 1.2rem;
+  transform: translate(-0.7rem, -0.7rem);
 }
 
 .sky {
